@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://rusinovatn.netlify.app/sitemap.xml
