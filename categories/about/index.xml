@@ -1,26 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>О себе on Сайт учителя математики</title><link>https://forestergr.github.io/rusinovatn-site/categories/about/</link><description>Recent content in О себе on Сайт учителя математики</description><generator>Hugo -- 0.146.2</generator><language>ru</language><lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://forestergr.github.io/rusinovatn-site/categories/about/index.xml" rel="self" type="application/rss+xml"/><item><title>О себе</title><link>https://forestergr.github.io/rusinovatn-site/about/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://forestergr.github.io/rusinovatn-site/about/</guid><description>&lt;p>Меня зовут Тамара Николаевна Русинова.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>О себе on Сайт учителя математики</title><link>https://forestergr.github.io/rusinovatn-site/categories/about/</link><description>Recent content in О себе on Сайт учителя математики</description><generator>Hugo -- 0.146.2</generator><language>ru</language><lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://forestergr.github.io/rusinovatn-site/categories/about/index.xml" rel="self" type="application/rss+xml"/><item><title>О себе</title><link>https://forestergr.github.io/rusinovatn-site/about/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://forestergr.github.io/rusinovatn-site/about/</guid><description>&lt;h1 id="о-себе">О себе&lt;/h1>
+&lt;p>Меня зовут Тамара Николаевна Русинова.&lt;/p>
 &lt;p>Я учитель математики с 30-летним стажем.&lt;/p>
 &lt;h2 id="работа">Работа&lt;/h2>
 &lt;h3 id="сейчас">Сейчас&lt;/h3>
 &lt;div style="text-align: justify;">
 С 2024 года работаю учителем математики в государственном бюджетном общеобразовательном учреждении города Москвы &amp;ldquo;Школа № 1557 имени Петра Леонидовича Капицы&amp;rdquo; (&lt;a href="https://lyc1557zg.mskobr.ru/">ГБОУ школа № 1557 им. П.Л. Капицы&lt;/a>).
 &lt;/div>
+&lt;br>
 &lt;!--
 &lt;div class="shortcode-center">
 &lt;strong>В этом учебном году:&lt;/strong>
 &lt;/div>
-| Предмет | Классы |
-|:---:|:---:|
-| &lt;div style="text-align: justify;">
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: center">Предмет&lt;/th>
+&lt;th style="text-align: center">Классы&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: center">&lt;div style="text-align: justify;">
 математика для интересующихся
-&lt;/div> | $5^а, 5^в, 5^м$ |
-| &lt;div style="text-align: justify;">
+&lt;/div>&lt;/td>
+&lt;td style="text-align: center">$5^а, 5^в, 5^м$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;div style="text-align: justify;">
 математика для увлеченных
-&lt;/div> | $6^а, 6^б, 6^в$ |
-| &lt;div style="text-align: justify;">
+&lt;/div>&lt;/td>
+&lt;td style="text-align: center">$6^а, 6^б, 6^в$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&lt;div style="text-align: justify;">
 алгебра, геометрия, вероятность и статистика
-&lt;/div> | $7^б, 8^б, 8^в$ |
--->
+&lt;/div>&lt;/td>
+&lt;td style="text-align: center">$7^б, 8^б, 8^в$&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: center">&amp;ndash;&amp;gt;&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;!--
 &lt;div class="math-definition">
 &lt;strong>В этом учебном году:&lt;/strong>
