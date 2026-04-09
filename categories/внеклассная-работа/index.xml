@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Внеклассная Работа on Сайт учителя математики</title><link>https://forestergr.github.io/rusinovatn-site/categories/%D0%B2%D0%BD%D0%B5%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/</link><description>Recent content in Внеклассная Работа on Сайт учителя математики</description><generator>Hugo -- 0.146.2</generator><language>ru</language><lastBuildDate>Mon, 01 Jun 2020 10:25:00 +0300</lastBuildDate><atom:link href="https://forestergr.github.io/rusinovatn-site/categories/%D0%B2%D0%BD%D0%B5%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>Акция «Красная гвоздика»</title><link>https://forestergr.github.io/rusinovatn-site/posts/v_a/</link><pubDate>Mon, 01 Jun 2020 10:25:00 +0300</pubDate><guid>https://forestergr.github.io/rusinovatn-site/posts/v_a/</guid><description>из материалов для внеклассной работы</description></item><item><title>Выпускной вечер в 9 классе</title><link>https://forestergr.github.io/rusinovatn-site/posts/v_9/</link><pubDate>Mon, 04 Aug 2008 15:25:00 +0300</pubDate><guid>https://forestergr.github.io/rusinovatn-site/posts/v_9/</guid><description>из материалов для внеклассной работы</description></item><item><title>Родителям о воспитании мальчиков и девочек</title><link>https://forestergr.github.io/rusinovatn-site/posts/v_5/</link><pubDate>Sun, 04 May 2008 15:25:00 +0300</pubDate><guid>https://forestergr.github.io/rusinovatn-site/posts/v_5/</guid><description>из материалов для внеклассной работы</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Внеклассная Работа on Сайт учителя математики</title>
+    <link>http://localhost:1313/rusinovatn-site/categories/%D0%B2%D0%BD%D0%B5%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/</link>
+    <description>Recent content in Внеклассная Работа on Сайт учителя математики</description>
+    <generator>Hugo -- 0.146.2</generator>
+    <language>ru</language>
+    <lastBuildDate>Mon, 01 Jun 2020 10:25:00 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/rusinovatn-site/categories/%D0%B2%D0%BD%D0%B5%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Акция «Красная гвоздика»</title>
+      <link>http://localhost:1313/rusinovatn-site/posts/v_a/</link>
+      <pubDate>Mon, 01 Jun 2020 10:25:00 +0300</pubDate>
+      <guid>http://localhost:1313/rusinovatn-site/posts/v_a/</guid>
+      <description>из материалов для внеклассной работы</description>
+    </item>
+    <item>
+      <title>Выпускной вечер в 9 классе</title>
+      <link>http://localhost:1313/rusinovatn-site/posts/v_9/</link>
+      <pubDate>Mon, 04 Aug 2008 15:25:00 +0300</pubDate>
+      <guid>http://localhost:1313/rusinovatn-site/posts/v_9/</guid>
+      <description>из материалов для внеклассной работы</description>
+    </item>
+    <item>
+      <title>Родителям о воспитании мальчиков и девочек</title>
+      <link>http://localhost:1313/rusinovatn-site/posts/v_5/</link>
+      <pubDate>Sun, 04 May 2008 15:25:00 +0300</pubDate>
+      <guid>http://localhost:1313/rusinovatn-site/posts/v_5/</guid>
+      <description>из материалов для внеклассной работы</description>
+    </item>
+  </channel>
+</rss>
