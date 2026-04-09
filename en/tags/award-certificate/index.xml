@@ -1,34 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Award Certificate on Math Teacher&#39;s Website</title>
-    <link>http://localhost:1313/rusinovatn-site/en/tags/award-certificate/</link>
-    <description>Recent content in Award Certificate on Math Teacher&#39;s Website</description>
-    <generator>Hugo -- 0.146.2</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/rusinovatn-site/en/tags/award-certificate/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/rusinovatn-site/en/about/</link>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/rusinovatn-site/en/about/</guid>
-      <description>&lt;p&gt;My name is Tamara Nikolaevna Rusinova.&lt;/p&gt;
-&lt;p&gt;I am a mathematics teacher with 30 years of experience.&lt;/p&gt;
-&lt;h2 id=&#34;work-experience&#34;&gt;Work Experience&lt;/h2&gt;
-&lt;h3 id=&#34;now&#34;&gt;Now&lt;/h3&gt;
-&lt;div style=&#34;text-align: justify;&#34;&gt;
-  Since 2024, I have been working as a mathematics teacher at the State Budgetary Educational Institution of the City of Moscow “School No. 1557 named after Pyotr Leonidovich Kapitsa” (&lt;a href=&#34;https://lyc1557zg.mskobr.ru/&#34;&gt;GBOU School No. 1557 named after P.L. Kapitsa&lt;/a&gt;).
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;In this academic year:&lt;/strong&gt;
-&lt;div style=&#34;text-align: justify;&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Mathematics for the Interested in $5^а, 5^в, 5^м$;&lt;/li&gt;
-&lt;li&gt;Mathematics for Enthusiasts in $6^а, 6^б, 6^в$;&lt;/li&gt;
-&lt;li&gt;Algebra, Geometry, Probability and Statistics in $7^б, 8^б, 8^в$.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/div&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Award Certificate on Math Teacher's Website</title><link>https://forestergr.github.io/rusinovatn-site/en/tags/award-certificate/</link><description>Recent content in Award Certificate on Math Teacher's Website</description><generator>Hugo -- 0.146.2</generator><language>en</language><lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://forestergr.github.io/rusinovatn-site/en/tags/award-certificate/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://forestergr.github.io/rusinovatn-site/en/about/</link><pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate><guid>https://forestergr.github.io/rusinovatn-site/en/about/</guid><description>&lt;p>My name is Tamara Nikolaevna Rusinova.&lt;/p>
+&lt;p>I am a mathematics teacher with 30 years of experience.&lt;/p>
+&lt;h2 id="work-experience">Work Experience&lt;/h2>
+&lt;h3 id="now">Now&lt;/h3>
+&lt;div style="text-align: justify;">
+Since 2024, I have been working as a mathematics teacher at the State Budgetary Educational Institution of the City of Moscow “School No. 1557 named after Pyotr Leonidovich Kapitsa” (&lt;a href="https://lyc1557zg.mskobr.ru/">GBOU School No. 1557 named after P.L. Kapitsa&lt;/a>).
+&lt;/div>
+&lt;p>&lt;strong>In this academic year:&lt;/strong>
+&lt;div style="text-align: justify;">
+&lt;ul>
+&lt;li>Mathematics for the Interested in $5^а, 5^в, 5^м$;&lt;/li>
+&lt;li>Mathematics for Enthusiasts in $6^а, 6^б, 6^в$;&lt;/li>
+&lt;li>Algebra, Geometry, Probability and Statistics in $7^б, 8^б, 8^в$.&lt;/li>
+&lt;/ul>
+&lt;/div>&lt;/p></description></item></channel></rss>
