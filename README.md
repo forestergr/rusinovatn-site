@@ -258,4 +258,253 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-ещё раз поправил гамбургер-меню, добавил доп.условия при изменении ширины.
+Ещё раз поправил гамбургер-меню, добавил доп.условия при изменении ширины.
+<br>
+Пока custom.css выглядит так (доб. переопределение увеличение ширины до 2560):
+```
+/* assets/css/extended/custom.css */
+/* Переопределяем глобальную переменную максимальной ширины контента */
+:root {
+    --main-width: 90vw;
+}
+
+/* Дополнительно, если вы хотите задать абсолютный лимит, чтобы контент не растягивался бесконечно */
+@media (min-width: 2560px) {
+    :root {
+        --main-width: 2560px;
+    }
+}
+
+.post-content p {
+    text-align: justify;
+}
+ 
+/* Не выравниваем параграфы, которые содержат только формулы или специальные блоки */
+.math, .katex-display {
+    text-align: left !important;
+}
+
+/* Цвет обычной ссылки */
+.post-content a {
+    color: #0066cc;  /* ярко-синий */
+    /* text-decoration: underline; /* подчёркивание (по желанию) */
+}
+
+/* Цвет ссылки при наведении мыши */
+.post-content a:hover {
+    color: #004499;  /* более тёмный синий */
+    /* text-decoration: underline; /* можно оставить или убрать */
+ /* Если хочешь сделать ссылки не только синими, 
+ а, например, зелёными или красными, то просто подставь нужный цвет в формате HEX,
+ например, #2e7d32 для зелёного, #b71c1c для красного.
+ Подобрать красивый оттенок можно на htmlcolorcodes.com. */
+
+}
+
+/* Стили для миниатюр грамот в таблицах */
+.post-content table img {
+    max-width: 100px;        /* ограничим ширину */
+    height: auto;            /* сохраним пропорции */
+    border: 1px solid #ddd;  /* светлая рамка */
+    border-radius: 4px;      /* скругление углов */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* лёгкая тень */
+    transition: transform 0.2s; /* плавное увеличение при наведении */
+}
+
+.post-content table img:hover {
+    transform: scale(1.05);   /* чуть увеличивается при наведении */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Эпиграф */
+.shortcode-epigraph {
+    font-style: italic;
+    text-align: right;
+    border-left: none !important; /* убираем стандартную линию */
+    margin: 2rem 0;
+    padding: 0 1rem;
+    color: #555;
+}
+.shortcode-epigraph p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.shortcode-epigraph footer {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #777;
+}
+
+/* Центрирование */
+.shortcode-center {
+    text-align: center;
+    margin: 1rem 0;
+}
+.shortcode-center img {
+    display: inline-block; /* чтобы картинки центрировались */
+}
+
+/* ===== ГАМБУРГЕР-МЕНЮ ===== */
+/* Для экранов шириной до 748px (z flip 6 внешний экран?) */
+/* Базовые стили для гамбургера (скрыт на больших экранах) */
+/* Скрываем гамбургер по умолчанию */
+.hamburger {
+    display: none;              /* значок скрыт по умолчанию */
+    cursor: pointer;            /* курсор мыши превращается в руку (как на ссылке) */
+    font-size: 1.5rem;          /* размер шрифта (иконки) установлен в 1.5rem */
+    position: absolute;         /* абсолютное позиционирование относительно ближайшего 
+                                позиционированного родителя (в нашем случае — .nav, 
+                                позволяет точно разместить иконку в правом верхнем углу,
+                                не сдвигая остальные элементы) */
+    right: 1rem;                /* отступ справа от родительского контейнера */
+    top: 0rem;                  /* отступ сверху от родительского контейнера */
+    z-index: 100;               /* устанавливает высокий приоритет наложения - 
+                                гарантирует, что иконка будет видна поверх других элементов
+                                (например, поверх логотипа или меню, если они перекрываются) */
+}
+
+/* Мобильные стили */
+/* На экранах до 768px (мобильные) */
+@media (max-width: 768px) {
+
+    /* Настройка навигации */
+    /* Делаем навигацию относительной для позиционирования гамбургера */
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        position: relative;
+        /* width: 100%; 
+        padding: 0.5rem 0; */
+        padding: 0;
+    }
+
+    /* Логотип: центрируем и убираем отступы */
+    .logo {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        order: 0; 
+        border-bottom: 1px solid var(--border); /* опционально, для разделения */
+    }
+
+    /* Показываем гамбургер */
+    .hamburger {
+        display: block;
+    }
+
+
+    /* Меню: по умолчанию скрыто, вертикальное, появляется при клике */
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        order: 1;
+        text-align: center;
+        background: var(--theme); /* чтобы фон совпадал с темой */
+        border-top: 1px solid var(--border);
+    }
+
+    /* Когда меню активно — показываем */
+    /* Показываем меню, если есть класс .show */
+    #menu.show {
+        display: flex;
+    }
+
+    /* Пункты меню */
+    /* Каждый пункт меню — на всю ширину */
+    #menu li {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        border-top: 1px solid var(--border); /* опционально: разделитель */
+    }
+
+    /* Ссылки внутри пунктов */
+    #menu li a {
+        display: block;
+        padding: 0rem 1rem !important; 
+        text-align: center; /* left; */
+        width: 100%;
+        box-sizing: border-box;
+        /* background: var(--entry); */
+        /* color: var(--primary); */
+        /* text-decoration: none; */
+    }
+
+    /* Убираем левый отступ у первого пункта (если есть) */
+  /*   #menu li:first-child a {
+        padding-left: 1rem !important;
+        margin-left: 0 !important;
+    }
+ */
+    /* При необходимости скрываем переключатель темы и языков на мобильных (по желанию) */
+/*     .logo-switches {
+        display: none;
+    }
+ */  
+    /* Переключатель темы и языков — прячем внутрь меню или адаптируем */
+    .logo-switches {
+        display: flex;
+        justify-content: center;
+        margin-top: 0rem; /* оставим на одном уровне  */
+    }
+}
+
+/* Для экранов уже 435px (очень узкие мобильные устройства) */
+/* Для экранов уже 480px (очень узкие мобильные) */
+@media (max-width: 435px) {
+    /* Меняем поведение контейнера навигации */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Убираем абсолютное позиционирование у гамбургера */
+    .hamburger {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        /* text-align: right; */
+        /* margin-top: 0.5rem; /* верхний отступ */
+        order: 3; /* помещаем в конец */
+        /* чтобы иконка визуально отделялась, добавим верхний отступ и/или рамку */
+        /* margin-top: 0.5rem; */
+        /* padding-top: 0.5rem; */
+        /* border-top: 1px solid var(--border); */
+        /* top: 1.50rem; */
+        right: 1.50rem;
+        /* display: flex; */
+        /* justify-content: right; */
+        /* width: 100%; */
+    }
+
+    /* Логотип идёт первым */
+    .logo {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Блок переключателей — вторым */
+    .logo-switches {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+        border-top: 1px solid var(--border);
+        padding-top: 0.5rem;
+    }
+
+    /* Меню (список) — четвёртым */
+    #menu {
+        order: 4;
+    }
+}
+```
+
