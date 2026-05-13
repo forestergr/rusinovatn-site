@@ -27,6 +27,16 @@ document.addEventListener('DOMContentLoaded', function() {
             dark.style.display = isDark() ? 'inline' : 'none';
         });
 
+        // Ссылки-превью theme-img-link
+        document.querySelectorAll('.theme-img-link-wrapper').forEach(wrapper => {
+            const light = wrapper.querySelector('.theme-light');
+            const dark = wrapper.querySelector('.theme-dark');
+            if (!light || !dark) return;
+            // Сбрасываем display, чтобы применилось CSS-правило (inline-block)
+            light.style.display = isDark() ? 'none' : 'inline-block';
+            dark.style.display = isDark() ? 'inline-block' : 'none';
+        });
+
         // Фавиконка
         const favicon = document.getElementById('theme-favicon');
         if (favicon && favicon.dataset.light && favicon.dataset.dark) {
