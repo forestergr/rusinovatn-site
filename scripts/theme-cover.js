@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const stored = localStorage.getItem('pref-theme') || localStorage.getItem('theme');
         if (stored === 'dark' || stored === 'light') return stored === 'dark';
         return window.matchMedia('(prefers-color-scheme: dark)').matches;
+
     }
 
     function applyAllCovers() {
@@ -21,14 +22,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 dark.style.display = 'none';
             }
         });
+
+        // === Обновление фавиконки (добавьте этот блок) ===
+        const favicon = document.querySelectorAll('link[rel="icon"]');
+        if (favicon) {
+            favicon.href = isDark() ? '/favicon-dark.png' : '/favicon-light.png';
+        }
+
     }
-
+  
     applyAllCovers();
-
+  
     const toggleBtn = document.getElementById('theme-toggle');
     if (toggleBtn) {
         toggleBtn.addEventListener('click', function() {
-            setTimeout(applyAllCovers, 50);
+            setTimeout(applyAllCovers, 100);
         });
     }
 
