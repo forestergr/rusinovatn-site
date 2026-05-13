@@ -6,33 +6,36 @@ document.addEventListener('DOMContentLoaded', function() {
         const stored = localStorage.getItem('pref-theme') || localStorage.getItem('theme');
         if (stored === 'dark' || stored === 'light') return stored === 'dark';
         return window.matchMedia('(prefers-color-scheme: dark)').matches;
-
     }
 
     function applyAllCovers() {
+        // Обложки
         document.querySelectorAll('.theme-cover').forEach(block => {
             const light = block.querySelector('.cover-light');
             const dark = block.querySelector('.cover-dark');
             if (!light || !dark) return;
-            if (isDark()) {
-                light.style.display = 'none';
-                dark.style.display = 'block';
-            } else {
-                light.style.display = 'block';
-                dark.style.display = 'none';
-            }
+            light.style.display = isDark() ? 'none' : 'block';
+            dark.style.display = isDark() ? 'block' : 'none';
         });
 
-       // === Обновление фавиконки ===
+        // Контентные изображения theme-img
+        document.querySelectorAll('.theme-img-wrapper').forEach(wrapper => {
+            const light = wrapper.querySelector('.theme-light');
+            const dark = wrapper.querySelector('.theme-dark');
+            if (!light || !dark) return;
+            light.style.display = isDark() ? 'none' : 'inline';   // или 'block', если нужно
+            dark.style.display = isDark() ? 'inline' : 'none';
+        });
+
+        // Фавиконка
         const favicon = document.getElementById('theme-favicon');
         if (favicon && favicon.dataset.light && favicon.dataset.dark) {
             favicon.href = (isDark() ? favicon.dataset.dark : favicon.dataset.light) + '?v=' + Date.now();
         }
-
     }
-  
+
     applyAllCovers();
-  
+
     const toggleBtn = document.getElementById('theme-toggle');
     if (toggleBtn) {
         toggleBtn.addEventListener('click', function() {
