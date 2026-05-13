@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // === Обновление фавиконки (добавьте этот блок) ===
-        const favicon = document.querySelectorAll('link[rel="icon"]');
-        if (favicon) {
-            favicon.href = isDark() ? '/favicon-dark.png' : '/favicon-light.png';
+       // === Обновление фавиконки ===
+        const favicon = document.getElementById('theme-favicon');
+        if (favicon && favicon.dataset.light && favicon.dataset.dark) {
+            favicon.href = (isDark() ? favicon.dataset.dark : favicon.dataset.light) + '?v=' + Date.now();
         }
 
     }
