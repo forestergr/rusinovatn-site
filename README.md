@@ -526,4 +526,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 ```
-
+Доб. ссылка на профиль Макс (+ иконка в ресурсы) на главной странице.
